@@ -153,7 +153,7 @@
 
   .is-focused,
   // may or may not be a form-group or bmd-form-group
-  &.is-focused {
+  #{if(&, "&", "*")}.is-focused {
     // on focus set borders and labels to the validation color
 
     // Use the BS provided mixin for the bulk of the color
@@ -275,9 +275,9 @@
   }
 
   // floating focused/filled will look like static
-  &.is-focused,
+  #{if(&, "&", "*")}.is-focused,
   .is-focused,
-  &.is-filled,
+  #{if(&, "&", "*")}.is-filled,
   .is-filled {
     .bmd-label-floating {
       @include bmd-label-static($label-static-top, $floating-font-size);
