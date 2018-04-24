@@ -5,24 +5,20 @@
  */
 
 #countdown_dashboard {
-	margin-top:60px;
+	//margin-top:60px;
 }
 
-.countDown .days_dash .digit {
-	color: #FF0000;
+.countDown {
+    display: flex;
+
+    .days_dash .digit,
+    .hours_dash .digit,
+    .minutes_dash .digit,
+    .seconds_dash .digit {
+        color: #FF0000;
+    }
 }
 
-.countDown .hours_dash .digit {
-	color: #FF0000;
-}
-
-.countDown .minutes_dash .digit {
-	color: #FF0000;
-}
-
-.countDown .seconds_dash .digit {
-	color: #FF0000;
-}
 
 .dash {
 	height: 114px;
@@ -30,8 +26,12 @@
     background-color: transparent;
     background-repeat: no-repeat;
 	float: left;
-	margin-left: 21px;
     position: relative;
+    display: flex;
+}
+
+.hours_dash, .seconds_dash{
+    margin-left: 20px; 
 }
 
 .dash .digit {
@@ -78,32 +78,3 @@
     margin-left: 20px;
 }
 
-@media (max-width: 576px) {
-    .days_dash {
-        margin-left: 1.2em;
-    }
-    .hours_dash {
-        margin-left: 1.2em;
-    }
-    .minutes_dash {
-        margin-left: 1.2em;
-    }
-    .seconds_dash {
-        margin-left: 1.2em;
-    }
-}
-
-@media (max-width: 768px) {
-    .days_dash {
-        margin-left: 2.1em;
-    }
-    .hours_dash {
-        margin-left: 2.1em;
-    }
-    .minutes_dash {
-        margin-left: 2.1em;
-    }
-    .seconds_dash {
-        margin-left: 2.1em;
-    }
-}

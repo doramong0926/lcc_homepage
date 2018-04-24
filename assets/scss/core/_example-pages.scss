@@ -5,7 +5,10 @@
     }
 
     .page-header{
-        height: 90vh;
+        height: 100vh;
+        @include media-breakpoint-down(sm) {
+            height: 170vh;
+        }        
         overflow: hidden;
     }
     .brand{
