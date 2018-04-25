@@ -13764,6 +13764,19 @@ textarea {
   font-size: 3.85rem;
 }
 
+.info .icon-kyc-upload {
+  background-color: rgba(66, 71, 77, 0.1);
+  border-radius: 5%;
+  border-color: dimgrey;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.info .icon-kyc-upload > i {
+  font-size: 7rem;
+  padding-top: 5px;
+}
+
 .info .info-title {
   color: #3C4858;
   margin: 1.75rem 0 0.875rem;
@@ -13771,6 +13784,10 @@ textarea {
 
 .info p {
   color: #999999;
+}
+
+.info .section {
+  padding: 0;
 }
 
 .info-horizontal .icon {
@@ -16766,4 +16783,9 @@ footer .pull-center {
   .cd-vertical-nav {
     display: none !important;
   }
+}
+
+.save-kyc {
+  padding-top: 50px;
+  font-color: red;
 }

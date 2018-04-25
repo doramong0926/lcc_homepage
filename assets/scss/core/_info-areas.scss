@@ -10,12 +10,27 @@
             font-size: 3.85rem;
         }
     }
+    .icon-kyc-upload {
+        background-color: rgba(66, 71, 77, 0.1);
+        border-radius: 5%;
+        border-color: dimgrey;
+        border-width: 1px;
+        border-style: solid;
+
+        > i{
+            font-size: 7rem;
+            padding-top: 5px;
+        }
+    }
     .info-title{
         color: $black-color;
         margin: 0.875rem * 2 0 0.875rem;
     }
     p{
         color: $gray-color;
+    }
+    .section {
+        padding: 0;
     }
 }
 
@@ -36,22 +51,22 @@
 }
 
 .icon {
-  &.icon-primary {
-    color: $brand-primary;
+    &.icon-primary {
+        color: $brand-primary;
     }
-  &.icon-info {
-    color: $brand-info;
-  }
-  &.icon-success {
-    color: $brand-success;
-  }
-  &.icon-warning {
-    color: $brand-warning;
-  }
-  &.icon-danger {
-    color: $brand-danger;
-  }
-  &.icon-rose {
-    color: $brand-rose;
-}
+    &.icon-info {
+        color: $brand-info;
+    }
+    &.icon-success {
+        color: $brand-success;
+    }
+    &.icon-warning {
+        color: $brand-warning;
+    }
+    &.icon-danger {
+        color: $brand-danger;
+    }
+    &.icon-rose {
+        color: $brand-rose;
+    }
 }
