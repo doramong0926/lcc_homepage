@@ -14,13 +14,15 @@
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+    <!-- thema & bootstrap -->
     <link rel="stylesheet" href="./assets/css/material-kit.css?v=2.0.2">
     <!-- Documentation extras -->
     <!-- iframe removal -->
 </head>
 
 <body class="index-page">    
-    <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <nav class="navbar fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
         <div class="container">
             <div class="navbar-translate">
 				<!--a class="navbar-brand" href="#"><img src="./assets/img/LLC_symbol.png" alt="Live contents Cash"> </a-->
@@ -34,20 +36,15 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">                        
-						<a href="#container-lcc" class="nav-link click-move">
+						<a href="#container-about-lcc" class="nav-link click-move">
                             <i class="material-icons">layers</i> About LCC
                         </a>
                     </li>  
                     <li class="nav-item">                        
-                        <a href="#container-schedule" class="nav-link click-move">
-                            <i class="material-icons">content_paste</i> ICO Schedule
+                        <a href="#container-roadmap" class="nav-link click-move">
+                            <i class="material-icons">content_paste</i> ROADMAP
                         </a>
                     </li>
-                    <li class="nav-item">                        
-                        <a href="#container-team" class="nav-link click-move">
-                            <i class="material-icons">accessibility</i> Team
-                        </a>
-                    </li>  
                     <li class="dropdown nav-item">
                         <a href="" class="dropdown-toggle nav-link" data-toggle="dropdown">
                             <i class="material-icons">cloud_download</i> WhitePaper
@@ -68,32 +65,27 @@
                         </div>
                     </li>
 
-                    <li class="dropdown nav-item">
-                        <a href="" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                            <i class="material-icons">add_shopping_cart</i> Token Sale
-                        </a>
-                        <div class="dropdown-menu dropdown-with-icons">
-                            <a href="./profile.html" class="dropdown-item">
-                                <i class="material-icons">face</i> PROFILE
-                            </a>
-                            <a href="./kyc.html" class="dropdown-item">
-                                <i class="material-icons">assignment_ind</i> KYC
-                            </a>
-                            <a href="./buytoken.html" class="dropdown-item">
-                                <i class="material-icons">add_shopping_cart</i> BUY TOKEN
-                            </a>
-                        </div>
-                    </li>
-
                     <li class="nav-item">                        
-                        <a class="nav-link sign-in" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">
-                            <i class="material-icons">sentiment_very_satisfied</i> SIGN IN
+                        <a href="./buytoken.html" class="nav-link">
+                            <i class="material-icons">add_shopping_cart</i> BUY TOKEN
                         </a>
                     </li>
 
                     <li class="nav-item">                        
-                            <a class="nav-link sign-out" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">
-                            <i class="material-icons">sentiment_very_dissatisfied</i> SIGN OUT
+                        <a href="./myassets.html" class="nav-link">
+                            <i class="material-icons">assignment_ind</i> ASSETS
+                        </a>
+                    </li>
+
+                    <li class="nav-item">                        
+                        <a class="nav-link log-in" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">
+                            <i class="material-icons">sentiment_very_satisfied</i> LOG-IN
+                        </a>
+                    </li>
+
+                    <li class="nav-item">                        
+                            <a class="nav-link log-out" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">
+                            <i class="material-icons">sentiment_very_dissatisfied</i> LOG-OUT
                         </a>
                     </li>
 
@@ -118,7 +110,7 @@
     </nav>
 
     <div class="page-header header-filter" data-parallax="true">
-        <div class="container" id="first-container">
+        <div class="container">
             <div class="section text-left">
                 <div class="row">
                     <div class="col-12 col-md-8 main-header-left">
@@ -127,7 +119,7 @@
                         <h4>Total distributed</h4>
                         <br>					
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                            <div class="progress-bar progress-line-primary progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
 
                             <!--
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
@@ -150,28 +142,32 @@
                                 <div id="countdown_dashboard">
                                     <h2 class="dash_title">ROUND-A WILL BE ENDS IN : </h2>
                                     <h3 class="dash_title">15-AUG-2018</h3>
-                                    <div class="col-6 ml-auto mr-auto countDown justify-content-center">                                        
-                                        <div class="dash days_dash">
-                                            <span class="dash_title_day">days</span>
-                                            <div class="digit">0</div>
-                                            <div class="digit">0</div>
-                                        </div>
-                                        <div class="dash hours_dash">
-                                            <span class="dash_title_hour">hours</span>
-                                            <div class="digit">0</div>
-                                            <div class="digit">0</div>
+                                    <div class="row">
+                                        <div class="col-6 ml-auto mr-auto countDown justify-content-center">                                        
+                                            <div class="dash days_dash">
+                                                <span class="dash_title_day">days</span>
+                                                <div class="digit">0</div>
+                                                <div class="digit">0</div>
+                                            </div>
+                                            <div class="dash hours_dash">
+                                                <span class="dash_title_hour">hours</span>
+                                                <div class="digit">0</div>
+                                                <div class="digit">0</div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 ml-auto mr-auto countDown justify-content-center">
-                                        <div class="dash minutes_dash">
-                                            <span class="dash_title_min">minutes</span> 
-                                            <div class="digit">0</div>
-                                            <div class="digit">0</div>
-                                        </div>
-                                        <div class="dash seconds_dash">
-                                            <span class="dash_title_sec">seconds</span>
-                                            <div class="digit">0</div>
-                                            <div class="digit">0</div>
+                                    <div class="row">
+                                        <div class="col-6 ml-auto mr-auto countDown justify-content-center">
+                                            <div class="dash minutes_dash">
+                                                <span class="dash_title_min">minutes</span> 
+                                                <div class="digit">0</div>
+                                                <div class="digit">0</div>
+                                            </div>
+                                            <div class="dash seconds_dash">
+                                                <span class="dash_title_sec">seconds</span>
+                                                <div class="digit">0</div>
+                                                <div class="digit">0</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -184,7 +180,7 @@
     </div>
 
     <div class="main main-raised">
-        <div class="container">
+        <div class="container" id="container-about-lcc">
             <div class="section text-center">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
@@ -228,7 +224,7 @@
     </div>
 
 
-    <div class="main main-raised" id="container-lcc">
+    <div class="main main-raised">
         <div class="container">
             <div class="section text-center">
                 <div class="row">
@@ -272,8 +268,8 @@
         </div>
     </div>
     
-    <div class="main main-raised" id="container-roadmap">        
-        <div class="container">    
+    <div class="main main-raised">        
+        <div class="container" id="container-roadmap">    
             <div class="section text-center">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
@@ -320,8 +316,8 @@
         </div>
     </div>
 
-    <div class="main main-raised" id="container-schedule">
-            <div class="container">
+    <div class="main main-raised">
+            <div class="container" id="container-ico-schedule">
                 <div class="section text-center">
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto">
@@ -703,24 +699,22 @@
         </div>
     </div>
 
-    <!--   Core JS Files   -->
-    <script src="./assets/js/core/jquery.min.js"></script>
+    <!-- Core JS Files -->
+    <script src="./assets/js/core/jquery.js"></script>
     <script src="./assets/js/core/popper.min.js"></script>
     <script src="./assets/js/bootstrap-material-design.js"></script>
-    <!--  Plugin for Date Time Picker and Full Calendar Plugin  -->
-    <script src="./assets/js/plugins/moment.min.js"></script>
-    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-    <script src="./assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
-    <!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <script src="./assets/js/plugins/nouislider.min.js"></script>
+
     <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
     <script src="./assets/js/material-kit.js?v=2.0.2"></script>
-    <!--    Plugin for countdown.-->
+
+    <!-- Plugin -->
     <script src="./assets/js/plugins/jquery.lwtCountdown-1.0.js" language="Javascript" type="text/javascript"></script>
     <script src="./assets/js/plugins/functions.js" language="Javascript" type="text/javascript"></script>
-    <script src="./assets/js/plugins/jquery.scrollTo.min.js" language="Javascript" type="text/javascript"></script>
-    <script src="./assets/js/plugins/login-register.js" type="text/javascript"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="./assets/js/plugins/login-register.js" language="Javascript" type="text/javascript"></script>
+    <script src="./assets/js/plugins/jquery.scrollTo.min.js" language="Javascript" type="text/javascript"></script>    
+    <script src="https://www.google.com/recaptcha/api.js" language="Javascript" type="text/javascript"></script>
+    <script src="./assets/js/plugins/jquery.validate.min.js" language="Javascript" type="text/javascript"></script>
+    <script src="./assets/js/plugins/kyc-upload.js" language="Javascript" type="text/javascript"></script>
 </body>
 
 </html>

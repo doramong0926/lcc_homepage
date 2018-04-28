@@ -1,4 +1,131 @@
+
+
+
+// index page ----------------------------------------------
+// index page ----------------------------------------------
+// index page ----------------------------------------------
+.index-page{
+    .section-components h6.description{
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .page-header{
+        height: 100vh;
+        background-image: url("../img/kit/profile_city.jpg");
+
+        .main-header-left {
+            background-color: rgba(19, 36, 83, 0.8);
+        }
+        .main-header-right {
+            background-color: rgba(19, 36, 83, 0.5);
+        }
+        
+        @include media-breakpoint-down(sm) {
+            background-image: url("../img/kit/city.jpg");
+            height: 170vh;
+        }        
+        overflow: hidden;
+    }
+    .brand{
+        color: $white-color;
+        text-align: center;
+
+        h1{
+            font-size: 4.2rem;
+            font-weight: 600;
+            display: inline-block;
+            position: relative;
+        }
+        h3{
+            font-size: 1.313rem;
+            max-width: 500px;
+            margin: 10px auto 0;
+        }
+    }
+
+    h4.description{
+        font-size: 1.5em;
+    }
+}
+
+
+
+// buy token page ----------------------------------------------
+// buy token page ----------------------------------------------
+// buy token page ----------------------------------------------
 .save-kyc {
-    padding-top: 50px;
     font-color: red;
+}
+
+
+// asset page --------------------------------------------------
+// asset page --------------------------------------------------
+// asset page --------------------------------------------------
+.card-full-name .form-group {
+    margin-top: 0;
+}
+
+.assets-info-table {
+    margin-top: 30px;
+}
+
+.assets-info-table {
+    display: none;
+}
+
+.assets-info-table-sm {
+    display: block;
+    margin-top: 30px;
+}
+
+.wallet-addr-sm {
+    font-size: 12px;
+}
+
+@include media-breakpoint-up(sm) {
+    .assets-info-table {
+        display: block;
+    }
+    .assets-info-table-sm {
+        display: none;
+    }
+}
+
+
+// common ----------------------------------------------
+// common ----------------------------------------------
+// common ----------------------------------------------
+.log-out {
+    display: none;
+}
+
+.section{
+    padding: 70px 0;
+  }
+
+.subscribe {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main-raised{
+    margin: 10px 10px 10px;
+}
+
+.progress {
+    height: 1.1rem;
+    border-radius: 10;
+}
+
+tr {
+    &.collapse.show {
+      display: table-row;
+    }
+}
+  
+tbody {
+    &.collapse.show {
+      display: table-row-group;
+    }
 }

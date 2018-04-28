@@ -49,16 +49,14 @@
 @import "core/ripples";
 @import "core/headers";
 @import "core/footers";
+@import "core/responsive";
 
 // Core Plugins
-
 @import "plugins/plugin-datetime-picker";
 @import "plugins/plugin-nouislider";
 @import "plugins/countdown";
 @import "plugins/login-modal";
+@import "plugins/kyc-uploader";
 
-// Sections and Example pages
-
-@import "core/example-pages";
-@import "core/responsive";
+// Custom
 @import "core/custom-style";

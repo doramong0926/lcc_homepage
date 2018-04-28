@@ -13,13 +13,6 @@
 
 var big_image;
 
-$(document).ready(function(){
-    $('.click-move').click(function(e){
-        $.scrollTo(this.hash || 0, 500);
-        e.preventDefault();
-    });
-});
-
 $(document).ready(function() {
     BrowserDetect.init();
 

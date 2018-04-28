@@ -1,11 +1,17 @@
 // stylelint-disable selector-no-qualifying-type
 
 .fade {
-  opacity: 0;
   @include transition($transition-fade);
 
+  &:not(.show) {
+    opacity: 0;
+  }
+}
+
+.collapse {
+  display: none;
   &.show {
-    opacity: 1;
+    display: block;
   }
 }
 
@@ -27,6 +33,7 @@ tbody {
     display: table-row-group;
   }
 }
+
 
 .collapsing {
   position: relative;
