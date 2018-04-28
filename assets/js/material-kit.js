@@ -14,6 +14,13 @@
 var big_image;
 
 $(document).ready(function() {
+    $('.click-move').click(function(e){
+        $.scrollTo(this.hash || 0, 500);
+        e.preventDefault();
+    });
+});
+
+$(document).ready(function() {
     BrowserDetect.init();
 
     // Init Material scripts for buttons ripples, inputs animations etc, more info on the next link https://github.com/FezVrasta/bootstrap-material-design#materialjs
@@ -28,7 +35,6 @@ $(document).ready(function() {
 
     //  Activate the Tooltips
     $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
-
 
     // FileInput
     $('.form-file-simple .inputFileVisible').click(function() {
@@ -99,7 +105,6 @@ $(document).ready(function() {
         if (big_image.length != 0) {
             $(window).on('scroll', materialKit.checkScrollForParallax);
         }
-
     }
 });
 

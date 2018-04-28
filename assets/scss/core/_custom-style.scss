@@ -129,3 +129,26 @@ tbody {
       display: table-row-group;
     }
 }
+
+
+.info-nomal{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 30px;
+
+    .icon{
+        color: $gray-color;
+
+        > i{
+            font-size: 3.85rem;
+        }
+    }
+    .title{
+        color: $black-color;
+        margin: 0.875rem 2 0 0.875rem;
+    }
+    .description{
+        //color: $gray-color;
+        color: $black-color;
+    }
+}

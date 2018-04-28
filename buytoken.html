@@ -91,7 +91,7 @@
                             <i class="material-icons">sentiment_very_dissatisfied</i> LOG-OUT
                         </a>
                     </li>
-
+<!--
                     <li class="nav-item">
                         <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter">
                             <i class="fa fa-twitter"></i>
@@ -107,6 +107,7 @@
                             <i class="fa fa-instagram"></i>
                         </a>
                     </li>
+-->
                 </ul>
             </div>
         </div>
@@ -127,33 +128,60 @@
                             <b>Infomation</b> : Your KYC status is in appoving now. Please wait more.
                         </div>
                     </div>
-                    <div class="clearfix"></div>
                 </div>
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
                         <h2 class="title">PRESALE ROUND-A</h2>
-                        <h5 class="description">PreSale Round-A schdeule is "1.JULY ~ 31.JULY"</h5>
-                        <h5 class="description">Every investor should be done our KYC process and we only use etherium to buy LCC coin.</h5>
+                        <h5 class="description">PreSale Round-A schdeule is "1.JULY ~ 31.JULY"<br>
+                            Every investor should be done our KYC process and we only use etherium to buy LCC coin.</h5>
                     </div>
                 </div>
                 <div class="features">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="info">
-                                <div class="icon icon-info">
-                                    <i class="material-icons">chat</i>
+                        <div class="col-12 col-sm-4">
+                            <div class="row">
+                                <div class="token-calculator text-center">
+                                    <h3 class="title">Token Calculator</h3>
+                                    <h4 class="description">1 ETH = 100000 LCC</h4>
                                 </div>
-                                <h4 class="info-title">Free Chat</h4>
-                                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">                                        
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                            <i class="fa fa-group"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control" id="calculator-eth" placeholder="ETH">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">                                        
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                            <i class="fa fa-group"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control" id="calculator-lcc" placeholder="LCC">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="info">
-                                <div class="icon icon-success">
-                                    <i class="material-icons">verified_user</i>
-                                </div>
-                                <h4 class="info-title">Verified Users</h4>
-                                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                        <div class="col-12 col-sm-8">
+                            <div class="info-nomal text-left">
+                                <h3 class="title">How to invest?</h3>
+                                <ol>
+                                    <li>
+                                        <h4 class="description">Generate the address for investing and copy it.</h4>        
+                                    </li>
+                                    <li>
+                                        <h4 class="description">Transfer Etherium for purchasing LCC tokens to this address.</h4>        
+                                    </li>
+                                    <li>
+                                        <h4 class="description">Add your Ethereum address from which you own private key (do not add address from exchanges!) and get LCC tokens.</h4>        
+                                    </li>
+                                </ol>
                             </div>
                         </div>
                     </div>
@@ -378,6 +406,7 @@
     <script src="https://www.google.com/recaptcha/api.js" language="Javascript" type="text/javascript"></script>
     <script src="./assets/js/plugins/jquery.validate.min.js" language="Javascript" type="text/javascript"></script>
     <script src="./assets/js/plugins/kyc-upload.js" language="Javascript" type="text/javascript"></script>
+    <script src="./assets/js/plugins/token-calculator.js" language="Javascript" type="text/javascript"></script>
 </body>
 
 </html>
