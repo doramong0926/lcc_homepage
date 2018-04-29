@@ -16911,6 +16911,10 @@ footer .pull-center {
   display: none;
 }
 
+.kyc-uploader .card {
+  margin-top: 0;
+}
+
 .kyc-card {
   padding: 20px;
 }
@@ -17047,7 +17051,7 @@ footer .pull-center {
 .token-calculator {
   max-width: 100%;
   margin: 0 auto;
-  padding: 50px 0 30px;
+  padding: 25px 0 0;
 }
 
 .token-calculator .icon {
@@ -17065,6 +17069,15 @@ footer .pull-center {
 
 .token-calculator .description {
   color: #3C4858;
+}
+
+.token-calculator .card {
+  margin: 15px 0 15px;
+}
+
+.token-calculator .card .card-body {
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .index-page .section-components h6.description {
@@ -17182,7 +17195,7 @@ tbody.collapse.show {
 .info-nomal {
   max-width: 100%;
   margin: 0 auto;
-  padding: 50px 0 30px;
+  padding: 0 10px 0;
 }
 
 .info-nomal .icon {
@@ -17200,4 +17213,12 @@ tbody.collapse.show {
 
 .info-nomal .description {
   color: #3C4858;
+}
+
+.features {
+  margin: 70px 0 30px;
+}
+
+.info {
+  padding: 0;
 }

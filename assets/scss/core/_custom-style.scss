@@ -131,10 +131,11 @@ tbody {
 }
 
 
-.info-nomal{
+.info-nomal {
     max-width: 100%;
     margin: 0 auto;
-    padding: 50px 0 30px;
+    padding: 0 10px 0;
+
 
     .icon{
         color: $gray-color;
@@ -151,4 +152,12 @@ tbody {
         //color: $gray-color;
         color: $black-color;
     }
+}
+
+.features {
+    margin: 70px 0 30px;
+}
+
+.info{
+    padding: 0;
 }
