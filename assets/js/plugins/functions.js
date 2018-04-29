@@ -1,13 +1,23 @@
-(function ($) {
-	$('#countdown_dashboard').countDown({
-	    targetOffset: {
-	        'day':      0,
-	        'month':    0,
-	        'year':     1,
-	        'hour':     0,
-	        'min':      0,
-	        'sec':      0
-	    },	        
-    });	
-	$('#subscribe_form').bind('submit', function() { return false; });	
-})(jQuery);
+
+$(document).ready(function(){
+    $("#copy-eth-address").click(function() {
+		copyToClipboard("#address-eth");
+		
+		//document.getElementById("copy-eth-address").title = "copyed";
+	});
+});
+
+function copyToClipboard(element) {
+	var $temp = $("<input>");
+	$("body").append($temp);
+	$temp.val($(element).text()).select();
+	document.execCommand("copy");
+	$temp.remove();
+}
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+
+

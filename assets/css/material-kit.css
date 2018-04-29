@@ -16939,6 +16939,12 @@ footer .pull-center {
   border-color: #2ca8ff;
 }
 
+@media (max-width: 767.98px) {
+  .kyc-card .picture-container {
+    height: 160px;
+  }
+}
+
 .kyc-card .picture-container input[type="file"] {
   cursor: pointer;
   display: block;
@@ -17132,21 +17138,26 @@ footer .pull-center {
   font-color: red;
 }
 
+.profile-card {
+  margin-top: 0;
+}
+
 .card-full-name .form-group {
   margin-top: 0;
 }
 
-.assets-info-table {
-  margin-top: 30px;
+.profile-viewer .card {
+  margin-top: 0;
 }
 
-.assets-info-table {
+.profile-viewer {
+  margin-top: 0;
   display: none;
 }
 
-.assets-info-table-sm {
+.profile-viewer-sm {
+  margin-top: 0;
   display: block;
-  margin-top: 30px;
 }
 
 .wallet-addr-sm {
@@ -17154,10 +17165,10 @@ footer .pull-center {
 }
 
 @media (min-width: 576px) {
-  .assets-info-table {
+  .profile-viewer {
     display: block;
   }
-  .assets-info-table-sm {
+  .profile-viewer-sm {
     display: none;
   }
 }
@@ -17168,6 +17179,12 @@ footer .pull-center {
 
 .section {
   padding: 70px 0;
+}
+
+@media (max-width: 767.98px) {
+  .section {
+    padding: 30px 0;
+  }
 }
 
 .subscribe {
@@ -17219,6 +17236,18 @@ tbody.collapse.show {
   margin: 70px 0 30px;
 }
 
+@media (max-width: 767.98px) {
+  .features {
+    margin: 35px 0 15px;
+  }
+}
+
 .info {
   padding: 0;
+}
+
+@media (max-width: 767.98px) {
+  .fist-container {
+    margin: 50px 0 0;
+  }
 }

@@ -26,6 +26,10 @@
         &:hover{
             border-color: #2ca8ff;
         }
+
+        @include media-breakpoint-down(sm) {
+            height: 160px;
+        }    
     }
 
     .picture-container input[type="file"] {
