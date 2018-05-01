@@ -45,18 +45,28 @@ function openRegisterModal(){
 }
 
 function loginAjax(){
-    /*   Remove this comments when moving to server
-    $.post( "/login", function( data ) {
-            if(data == 1){
-                window.location.replace("/home");            
-            } else {
-                 shakeModal(); 
-            }
-        });
-    */
+    $.post("/users/login", {email: $('#email').val(), password: $('#password').val()}, function( data ) {
+        console.info('try to login. ' + email + password);
+        if(data.sucess == 'true'){
+            window.location.replace("/");            
+        } else if(data.sucess == 'true'){
+            shakeModal(); 
+        }else{
+            console.info('data.sucess : ' + data.sucess);
+        }
+    });
+}
 
-/*   Simulate error message from the server   */
-     shakeModal();
+function registeAjax(){
+    $.post("/users/register", {email: $('#email-register').val(), password: $('#password-register').val()
+                                , password_confirmation: $('#password-confirmation-register').val()}, function( data ) {
+        if(data.sucess == 'true') {
+            window.location.replace("/");
+        }
+        else{
+            shakeModal(); 
+        }
+    });
 }
 
 function logoutAjax(){
